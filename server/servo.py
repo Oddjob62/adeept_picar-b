@@ -18,7 +18,7 @@ pwm0_direction = -1
 pwm1_direction = 1
 pwm2_direction = 1
 
-pwm = Adafruit_PCA9685.PCA9685()
+pwm = Adafruit_PCA9685.PCA9685(address=0x40, busnum=1)
 pwm.set_pwm_freq(50)
 
 pwm0_init = 300
